@@ -7,20 +7,35 @@
     <link rel="stylesheet" href="b2.css">
 </head>
 <body>
-    <div class = "container" id="container">
-        <script>
-            const container = document.getElementById("container");
-            for (let i = 0; i < 4; i++) {
-                const square = document.createElement("div");
-                square.className = "square";
-                const text = document.createElement("h1");
-                text.className = "text";
-                text.innerText = "Hello";
-                square.appendChild(text);
-                container.appendChild(square);
-            }
-            <h1 class = "text" >Hello</h1>
-        </script>
+    <div class = "container">
+        <div class = "card"> 
+            <h1 class="title">BANG DIEM CUA EM</h1>
+            <div class ="text">
+                <label>Semester1:</label>
+                <input type = "text" id = "score">
+            </div>
+            <div class ="text">
+                <label>Semester2:</label>
+                <input type = "text" id = "score">
+            </div>
+            <div class ="text">
+                <label>Year: </label>
+                <select id="gender">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <div class ="text">
+                <label>Summarise: 
+                    <output id= "avg"></output>
+                </label>
+                <input type = "text">
+            </div>
+            <div class = "actions">
+                <button>Ok</button>
+                <button>Cancel</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
