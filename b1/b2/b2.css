@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.square {
+  width: 100px;
+  height: 300px;
+  background: rgb(78, 75, 75);
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: white;
+  margin: 0;
+}
