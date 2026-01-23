@@ -14,6 +14,9 @@
     margin-left: 30px;
     text-decoration: line-through;
 }
+.container {
+    box-sizing: border-box;
+} 
 .section-title {
     position: relative;
     font-weight: 400;
@@ -23,7 +26,7 @@
 .section-title::after {
     content: "";
     display: block;
-    width: 320px;        /* độ dài gạch */
+    width: 320px;       
     height: 1px;
     background: #000;
     margin-top: 10px;
@@ -60,16 +63,19 @@
     color: black;
     border-top: 2px solid black;
 }
-.left1, .right {
+.left, .right {
+    display: flex;
     width: 50%;
+    gap: 10px;  
 }
 .left1, .left2 {
-    width: 30%;
+    width: 50%;
 }
 .container2 {
     color: black;
     border-top: 2px solid black;
-    display: flex
+    display: flex;
+    box-sizing: border-box;
 }
 .photo1 {
     margin-left: 30px;
@@ -78,9 +84,12 @@
     width: 300px;
 }
 .photo2 {
-    height: 660px;
-    width: 700px;
-}
+    /* height: 660px;
+    width: 500px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}   
 .price {
     min-height: 40px;   /* giữ chỗ cho 2 giá */
 }
@@ -107,6 +116,8 @@
 }
 .banner {
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 .banner img {
     width: 100%;

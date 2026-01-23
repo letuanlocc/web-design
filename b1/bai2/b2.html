@@ -12,30 +12,31 @@
             <h1 class="title">BANG DIEM CUA EM</h1>
             <div class ="text">
                 <label>Semester1:</label>
-                <input type = "text" id = "score">
+                <input type = "text" id = "score1">
             </div>
             <div class ="text">
                 <label>Semester2:</label>
-                <input type = "text" id = "score">
+                <input type = "text" id = "score2">
             </div>
             <div class ="text">
                 <label>Year: </label>
                 <select id="gender">
-                    <option>1</option>
-                    <option>2</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
                 </select>
             </div>
             <div class ="text">
-                <label>Summarise: 
-                    <output id= "avg"></output>
-                </label>
-                <input type = "text">
+                <label>Summarise: </label>
+                <input type="text" id="avg" readonly>
             </div>
+            <p id="display"></p>
             <div class = "actions">
-                <button>Ok</button>
-                <button>Cancel</button>
+                <button onclick = "sum()" >Ok</button>
+                <button onclick = "cancel()">Cancel</button>
             </div>
         </div>
     </div>
+<script src="b2.js"></script>
 </body>
 </html>
