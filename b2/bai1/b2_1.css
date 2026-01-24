@@ -1,0 +1,41 @@
+.page {
+    min-height: 100vh;
+    background: pink;
+}
+html, body {
+    background: pink;
+}
+.text {
+    display: block;
+    /* flex-direction: column; */
+}
+.text label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+.text input {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 6px 20px;
+    margin: 0 10px;
+    background: white;
+    color: red;
+}
+
+.actions {
+    margin-bottom: 30px;
+}
+table {
+    border-collapse: collapse;
+}
+th,td {
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+td {
+    text-align: center;
+}

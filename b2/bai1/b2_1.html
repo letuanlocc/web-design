@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="b2_1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "page">
+    <div class = "container">
+        <div class  = "text">
+            <label for="name" >Fullname_Customer</label>
+            <input type="text" id ="name">
+        </div>
+        <div class  = "text">
+            <label for="id" >Id_pro</label>
+            <input type="number" id ="id">
+        </div>
+        <div class  = "text">
+            <label for="name_pro" >Name_pro</label>
+            <input type="text" id ="name_pro">
+        </div>
+        <div class  = "text">
+            <label for="quantity" >Quantity_pro</label>
+            <input type="number" id ="quantity">
+        </div>
+        <div class  = "text">
+            <label for="price" >Price_pro</label>
+            <input type="number" id ="price">
+        </div>
+    </div>
+    <div class = "container2">
+        <div class = "actions">
+            <button onclick = "Save()">Save</button>
+            <button onclick = "Show()">Show</button>
+            <button onclick = "Reset()">Reset</button>
+        </div>
+        <div class = "table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Auto_Increment</th>
+                        <th>Fullname_Customer</th>
+                        <th>Id_pro</th>
+                        <th>Name_pro</th>
+                        <th>Quantity_pro</th>
+                        <th>Price_pro</th>
+                        <th>Discount</th>
+                        <th>Amount</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id = "tbl"></tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+<script src = "b2_1.js"></script>
+</body>
+</html>
