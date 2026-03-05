@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <Tittle>Quan ly phong</Tittle>
+    </head>
+    <body>
+        <div class="header">
+            <h2>Quan ly phong</h2>
+            <div class="btn-group">
+                <button id= "showRoombtn" class="btn btn-red">Hiển Thị</button>
+                <button id="addRoomBtn" class="btn btn-orange">Thêm mới phòng</button>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <div class="input-group">
+                <label>Tên phòng</label>
+                <input id = "name_room" type="text" placeholder="Tên phòng">
+            </div>
+
+            <div class="input-group">
+                <label>Mô tả phòng</label>
+                <input id = "describe_room" type="text" placeholder="Mô tả phòng">
+            </div>
+
+            <div class="input-group">
+                <label>Giá</label>
+                <input id = "quantity" type="text" placeholder="Giá phòng">
+            </div>
+
+            <div class="input-group">
+                <label>hinh</label>
+                <input id = "image" type="text" placeholder="Image">
+            </div>
+        </div>
+        <div id="roomContainer" class="room-container"></div>
+        <script src="as.js"></script>
+    </body>
+</html>
